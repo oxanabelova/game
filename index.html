@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <title>Крестики Нолики</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+       
+  </head>
+  <body>
+    <main class="page">
+        <div class="container">
+            <div class="show-result">Крестики - Нолики</div>
+            <table class="playing-field" id="playing-field">
+                <tr class="playing-field__row">
+                    <td class="playing-field__cell"></td>
+                    <td class="playing-field__cell"></td>
+                    <td class="playing-field__cell"></td>
+                </tr>
+                <tr class="playing-field__row">
+                    <td class="playing-field__cell"></td>
+                    <td class="playing-field__cell"></td>
+                    <td class="playing-field__cell"></td>
+                </tr>
+                <tr class="playing-field__row">
+                    <td class="playing-field__cell"></td>
+                    <td class="playing-field__cell"></td>
+                    <td class="playing-field__cell"></td>
+                </tr>
+            </table>
+            <div class="play-score"></div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="circle"  viewBox="0 0 16 16">
+            <path style="fill:white;" d="M8,0C3.582,0,0,3.582,0,8s3.582,8,8,8s8-3.582,8-8S12.418,0,8,0z M8,15c-3.866,0-7-3.134-7-7
+                    s3.134-7,7-7s7,3.134,7,7S11.866,15,8,15z"/>
+        </symbol>
+        <symbol id="cross" viewBox="6 6 20 20">
+            <line style="fill:none;stroke: #015c5c;stroke-width:1.5;stroke-miterlimit:10;" x1="6.5" y1="25.5" x2="25.5" y2="6.5"/>
+            <line style="fill:none;stroke: #015c5c;stroke-width:1.5;stroke-miterlimit:10;" x1="6.5" y1="6.5" x2="25.5" y2="25.5"/>                
+        </symbol>
+    </svg>        
+  </body>
+  <script src="game.js"></script>
+  <script src="script.js"></script>
+  <script src="player.js"></script>
+  <script src="computer.js"></script>
+ </html>
